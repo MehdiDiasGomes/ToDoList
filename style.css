@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #CB356B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BD3F32, #CB356B);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 2rem;
+}
+
+.app {
+    width: 100%;
+    max-width: 40rem;
+    margin: 100px auto 20px;
+    padding: 2rem;
+    border-radius: 20px;
+    background: white;
+}
+
+.app h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: black;
+}
+
+.app img {
+    width: 4rem;
+    order: -1;
+}
+
+.app .title {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.app .input{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    padding-left: 2rem;
+    height: 4.5rem;
+    border-radius: 50px;
+}
+
+.app .input input{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.app .input button{
+    border: none;
+    outline: none;
+    padding: 25px 40px;
+    background: rgb(191, 62, 59);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.app ul{
+    margin: 2rem 0 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+.app ul li{
+    position: relative;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.app ul li::before{
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('img/uncheck.png');
+    background-size: cover;
+    background-position: center;
+    left: -2.7rem;
+    top: -0.1rem;
+}
+
+.app ul .checked{
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+.app ul .checked::before{
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-image: url('img/check.png');
+    background-size: cover;
+    background-position: center;
+    left: -2.7rem;
+    top: -0.1rem;
+}
+
+.app ul span{
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    width: 40px;
+    width: 40px;
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    transition: .3s;
+}
+
+.app ul span:hover{
+    border-radius: 50px;
+    background-color: #dbdbdb;
+}
+
+
+
